@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ravali Thippani | Portfolio</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #222;
+}
+nav a {
+  color: white;
+  margin-left: 20px;
+  font-weight: 500;
+}
+nav a:hover {
+  color: #00bcd4;
+}
+nav .left a {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 80px;
+  background: #f9f9f9;
+}
+.hero h1 {
+  font-size: 2.5rem;
+}
+.hero h1 span {
+  color: #007bff;
+}
+.hero p {
+  margin: 20px 0;
+  max-width: 800px;
+}
+.hero .links a {
+  display: inline-block;
+  margin-right: 15px;
+  background: #007bff;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+.hero .links a:hover {
+  background: #0056b3;
+}
+.headshot img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 4px solid #007bff;
+  object-fit: cover;
+}
+
+/* Sections */
+section {
+  padding: 60px 80px;
+}
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Projects */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.project-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.project-card:hover {
+  transform: scale(1.03);
+}
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  background: #007bff;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+.project-card a:hover {
+  background: #0056b3;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+}
+
+
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="left"><a href="#">Ravali Thippani</a></div>
+    <div class="right">
+      <a href="https://github.com/RavaliThippani" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://linkedin.com/in/ravali-thippani-747a41339" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="mailto:ravalithippani001@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+    </div>
+  </nav>
+  <section class="hero">
+    <div class="text">
+      <h1>Hi, I'm <span>Ravali</span> 👋</h1>
+      <p>
+        I am a passionate and motivated Computer Science undergraduate at Keshav Memorial Institute of Technology with a strong interest in full-stack development, artificial intelligence, and problem solving. Over the past few years, I have built hands-on projects ranging from intelligent chatbots using FastAPI, LangChain, and Gemini API to practical web applications like Expense Tracker and Travel Nest using the MERN stack. I enjoy turning complex ideas into simple, user-friendly solutions and constantly push myself to learn new technologies and frameworks. Beyond academics, I am disciplined and goal-oriented, having earned an NCC ‘B’ Certificate that reflects my leadership and teamwork skills. My long-term goal is to become an innovative software developer who not only writes efficient code but also contributes to meaningful projects that create impact. I believe in learning by building, and every project I create is a step toward becoming a well-rounded engineer capable of solving real-world problems.
+      </p>
+      <div class="links">
+        <a href="#skills"><i class="fa-solid fa-code"></i> Skills</a>
+        <a href="#projects"><i class="fa-solid fa-diagram-project"></i> Projects</a>
+        <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+      </div>
+    </div>
+    <div class="headshot">
+      <img src="Ravali image.jpg" alt="Ravali Thippani">
+    </div>
+  </section>
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li><b>Languages:</b> C++, Java, Python, SQL</li>
+      <li><b>Web:</b> HTML, CSS, JavaScript, Bootstrap</li>
+      <li><b>Frameworks:</b> FastAPI, LangChain, MERN Stack</li>
+      <li><b>Tools:</b> Git, GitHub, VS Code, Jupyter</li>
+      <li><b>Other:</b> Machine Learning Basics, DBMS</li>
+    </ul>
+  </section>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>📌 KMIT Chatbot - VidyaSaarthi</h3>
+        <p>AI-powered chatbot for KMIT students using FastAPI, LangChain, ChromaDB, HuggingFace, and Gemini API. Provides precise answers to academic queries.</p>
+        <a href="https://github.com/your-github/kmit-chatbot" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>📌 Travel Nest</h3>
+        <p>Tourism website showcasing destinations, blogs, and booking options. Built with HTML, CSS, JavaScript, and MongoDB.</p>
+        <a href="https://github.com/your-github/travel-nest" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>📌 Expense Tracker</h3>
+        <p>Personal finance app to track expenses, categorize spending, and generate insights. Built with JavaScript, Node.js, and MongoDB.</p>
+        <a href="https://github.com/your-github/expense-tracker" target="_blank">View Project</a>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:ravalithippani001@gmail.com">ravalithippani001@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/ravali-thippani-747a41339" target="_blank">linkedin.com/in/ravali-thippani</a></p>
+    <p>GitHub: <a href="https://github.com/RavaliThippani" target="_blank">github.com/RavaliThippani</a></p>
+  </section>
+  <footer>
+    <p>&copy; 2025 Ravali Thippani. All rights reserved.</p>
+  </footer>
+</body>
+</html>
